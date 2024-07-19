@@ -81,7 +81,8 @@ nav button:hover {
 
 .art-font {
     position: relative;
-    top: 200px;
+    /* top: 210px; */
+    top: 900px;
     left: 110px;
     
 }
@@ -93,4 +94,12 @@ nav button:hover {
     font-family: 'Noto Sans Japanese', serif;
     color: #292a2c;
     transition: 0.5s ease-out;
+}
+
+.art-font p {
+    font-size: 39px;
+    font-family: 'Noto Sans Japanese';
+    color: #351d01;
+    font-weight: 300;
+    transition: 0.5s ease-in-out;
 }
