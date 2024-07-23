@@ -1,32 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio MPLS</title>
-    <link rel="shortcut icon" href="assets/images/M-image.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav id="hide-nav">
-            <img src="assets/icons/logo.svg" alt="Studiompls loo">
-            <ul>
-                <li><a href="#">LOGOS</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <button>START  A  PROJECT</button>
-            </ul>
-        </nav>
+    <link
+      rel="shortcut icon"
+      href="assets/images/M-image.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <header id="hide-nav">
+      <nav>
+        <img src="assets/icons/logo.svg" alt="Studiompls loo" />
+        <ul>
+          <li><a href="#">LOGOS</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <button>START A PROJECT</button>
+        </ul>
+      </nav>
     </header>
-    <section>
-        <div class="art-font">
-            <h1>Art Changes everything.</h1>
-            <p>Design your story with branding, packaging, and illustration.</p>
+    <div class="art-font">
+      <h1>Art Changes everything.</h1>
+      <p>Design your story with branding, packaging, and illustration.</p>
+      <button class="section-btn">START A PROJECT</button>
+    </div>
+    <div class="container mb-4">
+      <div class="row h-75">
+        <div class="col-6 h-75 w-50">
+          <div class="card">
+            <img src="assets/images/Front_1.jpg" alt="scent">
+          </div>
         </div>
-    </section>
+        <div class="col-5 h-25 w-50">
+          <div class="card h-25">
+            <img class="h-75" src="assets/images/bottle.jpg" alt="scent">
+          </div>
+        </div>
+        <div class="col-6 w-50 gy-4">
+          <div class="card h-100">
+            <img class="h-100" src="assets/images/cup.jpg" alt="scent">
+          </div>
+      </div>
+      <div class="col-5 w-50 h-25">
+        <div class="card ">
+          <img class="h-25" src="assets/images/yoke outdoors.jpg" alt="scent">
+        </div>
+      </div>
+    </div>
+    
     <script src="assets/script.js"></script>
-</body>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
 </html>
