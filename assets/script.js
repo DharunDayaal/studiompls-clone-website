@@ -1,10 +1,12 @@
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-// var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementById("hide-nav").style.display= "none";
-//   } else {
-//     document.getElementById("hide-nav").style.display = "initial";
-//   }
-//   prevScrollpos = currentScrollPos;
-// }
+let lastScroll = 0;
+const navBar = document.querySelector("nav");
+window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;  
+    if(currentScrollY > lastScroll) {
+        navBar.classList.add('hide');
+    }
+    else{
+        navBar.classList.remove('hide');
+    }
+    lastScroll = currentScrollY;
+})
