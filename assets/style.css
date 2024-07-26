@@ -1,4 +1,6 @@
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 body{
@@ -81,6 +83,7 @@ nav button{
     font-weight: 500;
     font-size: 12px;
     color: black;
+    background-color: #f0ecec;
     font-family: sans-serif;
     
 }
@@ -93,39 +96,38 @@ nav button:hover {
     font-family: sans-serif;
 }
 
-.art-font {
+/* .art-font {
     width: fit-content;
     position: relative;
     top: 210px;
     left: 20px;
     overflow: hidden;
     font-size: 19rem;
-    font-weight:normal;
+    
     font-family: 'Noto Sans Japanese', serif;
     color: #292a2c;
     word-spacing: 5px;
+} */
+
+.art-pos {
+    position: relative;
+    top: 200px;
+    /* overflow-x: hidden; */
 }
 
-.para-pos {
-    width: fit-content;
-    position: relative;
-    top: 210px;
-    left: 20px;
-    overflow: hidden;
-    color: #351d01;
-    font-size: 19rem;
+.art-pos h1 {
+    font-size: 2.9rem;
+    font-family: serif;
+    color: #292a2c;
+    word-spacing: 5px;
     font-weight:normal;
-    font-family: 'Noto Sans Japanese', serif;
-    word-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, serif;
 }
 
 .section-btn {
     width: 225px;
     height: 60px;
-    left: 20px;
-    position: relative;
-    top: 210px;
-    margin-top: 22px;
+    margin-top: 2.89rem;
     border: 1px solid;
     border-radius: 32px;
     padding: 12px 28px;
@@ -133,6 +135,7 @@ nav button:hover {
     font-weight: 500;
     color: black;
     letter-spacing: 2px;
+    background-color: #fff;
     font-family: sans-serif;
     text-align: center;
 }
@@ -145,17 +148,38 @@ nav button:hover {
     font-family: sans-serif;
 }
 
-.container {
-    margin-top: 265px;
+ .art-pos .para-pos {
+    color: #351d01;
+    font-size: 1.3rem;
+    font-weight:normal;
+    font-family: sans-serif;
 }
 
-.container-fluid p { 
-    letter-spacing: 2px;
+
+
+.container {
+    margin-top: 260px;
+}
+
+.cf-div p { 
+    letter-spacing: 3px;
     margin: 0;
     font-family: 'Noto Sans Japanese', system-ui;
 }
 
-.container-fluid p:hover { 
+.cf-div p:hover { 
     letter-spacing: 2px;
     text-decoration: underline;
+}
+
+.our-process {
+    background-color: #000;
+}
+.our-process  h1{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #E7E8E5;
+    font-size: 52px;
+    margin-top: 4.75rem;
 }
