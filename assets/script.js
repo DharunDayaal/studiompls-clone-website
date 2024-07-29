@@ -10,3 +10,7 @@ window.addEventListener('scroll', () => {
     }
     lastScroll = currentScrollY;
 })
+
+function handleStartProject(){
+    window.location.href = './assets/pages/startProject.html';
+}

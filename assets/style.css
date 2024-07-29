@@ -309,6 +309,10 @@ footer .connect-design a:active {
     color: #AEB1B7;
 }
 
+footer .connect-design a:last-child{
+  text-decoration: none;
+}
+
 footer .footer-btn {
     width: 50%;
     height: 60px;
@@ -338,3 +342,4 @@ footer .footer-btn {
     border-top: 1px #292a2c solid;
     padding: 5rem 0 5rem 0;
   }
+
