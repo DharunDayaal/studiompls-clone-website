@@ -11,6 +11,16 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScrollY;
 })
 
-function handleStartProject(){
-    window.location.href = './assets/pages/startProject.html';
+function handleStartProject(linkToProjecPage){
+    window.location.href = linkToProjecPage.value;
+}
+
+function handleSidebar() {
+    const sideBar = document.querySelector('.sidebar');
+    sideBar.style.display = 'flex';
+}
+
+function handleHideSidebar() {
+    const sideBar = document.querySelector('.sidebar');
+    sideBar.style.display = 'none';
 }

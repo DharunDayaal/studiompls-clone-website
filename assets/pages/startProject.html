@@ -10,15 +10,24 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    
 </head>
 <body>
-    <nav>
-        <img src="assets/icons/logo.svg" alt="Studiompls loo" />
-        <ul>
-          <li><a href="#">LOGOS</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <button>START A PROJECT</button>
-        </ul>
-      </nav>
+  <nav>
+    <img src="assets/icons/logo.svg" alt="Studiompls loo" />
+    <ul>
+      <li><a href="#">LOGOS</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <button onclick="handleStartProject(this)" value="assets\pages\startProject.html">START A PROJECT</button>
+    </ul>
+  </nav>
+      
+    <script src="assets/script.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>

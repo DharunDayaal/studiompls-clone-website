@@ -5,19 +5,12 @@
 }
 body {
   background-color: #ecedea;
+  min-height: 100vh;
 }
-
-/* header {
-    
-    width: 100%;
-    height: 20%;
-    
-    
-} */
 
 nav {
   position: fixed;
-  top: 1rem;
+  top: 0.5rem;
   left: 0;
   z-index: 10;
   width: 100%;
@@ -91,20 +84,94 @@ nav button:hover {
   background-color: #c7e8d6;
   border-color: #c7e8d6;
   font-family: sans-serif;
+} 
+
+.nav-item {
+  font-size: 12px;
+  padding: 0 12px 0 12px;
+  
 }
 
-/* .art-font {
-    width: fit-content;
-    position: relative;
-    top: 210px;
-    left: 20px;
-    overflow: hidden;
-    font-size: 19rem;
-    
-    font-family: 'Noto Sans Japanese', serif;
-    color: #292a2c;
-    word-spacing: 5px;
-} */
+.nav-item a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-item a:hover
+,.nav-item a:focus {
+  color: #000;
+  text-decoration-thickness: 1.89px;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
+  padding: 0;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+  text-align: center;
+}
+
+.sidebar .nav-link {
+  width: 100%;
+}
+
+.sidebar .nav-item:first-child {
+  width: 100%;
+  flex: none;
+  padding: 0;
+  position: absolute;
+  top: 3%;
+  left: 9rem;
+}
+
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .img-size {
+    padding-left: 0;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1000px){
+  .hide-menu-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .img-size {
+    padding-left: 0;
+    width: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .img-size {
+    padding-left: 0;
+    width: 50%;
+  }
+}
+
 
 .art-pos {
   position: relative;

@@ -21,13 +21,48 @@
     />
   </head>
   <body>
-    <nav>
-      <img src="assets/icons/logo.svg" alt="Studiompls loo" />
-      <ul>
-        <li><a href="#">LOGOS</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <button onclick="handleStartProject()">START A PROJECT</button>
-      </ul>
+    <nav class="nav navbar-expand-lg pe-0">
+      <div class="container-fluid d-flex flex-row justify-content-end ">
+        <img src="assets/icons/logo.svg" alt="logo" class="me-auto img-size">
+        <ul class="sidebar">
+
+          <!-- <img class="nav-item" src="assets/icons/logo.svg" alt="logo" class="me-auto"> -->
+          <li class="nav-item ms-auto h-100 pt-5" onclick=handleHideSidebar()>
+            <a href="#" class="pt-5">
+              <svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000">
+                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link">LOGOS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <button onclick="handleStartProject(this)" value="assets\pages\startProject.html">START A PROJECT</button>
+          </li>
+        </ul>
+        <ul class="p-0">
+          <li class="nav-item hideOnMobile ">
+            <a href="#" class="nav-link">LOGOS</a>
+          </li>
+          <li class="nav-item hideOnMobile">
+            <a href="#" class="nav-link">ABOUT</a>
+          </li>
+          <li class="nav-item hideOnMobile">
+            <button onclick="handleStartProject(this)" value="assets\pages\startProject.html">START A PROJECT</button>
+          </li>
+          <li class="nav-item hide-menu-icon" onclick=handleSidebar()>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <div class="container-fluid art-pos ">
       <div class="row h-100 w-100">
